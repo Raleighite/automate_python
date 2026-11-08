@@ -1,0 +1,200 @@
+{
+  "$schema": "floorplan/architecture@1",
+  "audience": "everyone",
+  "project": {
+    "name": "Python automation exercises",
+    "summary": "Independent learning scripts for terminal input, collections, text formatting and clipboard operations. There is no shared server, persisted database or application-wide pipeline."
+  },
+  "include": [
+    "code",
+    "config"
+  ],
+  "nodes": [
+    {
+      "id": "prompts",
+      "label": "Prompt and number exercises",
+      "summary": "Small standalone scripts teach input loops, guesses, validation and arithmetic.",
+      "paths": [
+        "birthdays.py",
+        "break.py",
+        "collatz.py",
+        "firstProgram.py",
+        "fiveTimes.py",
+        "guess.py",
+        "myPets.py",
+        "swordfish.py",
+        "validateInput.py"
+      ],
+      "kind": "service"
+    },
+    {
+      "id": "text",
+      "label": "Text, grids and tables",
+      "summary": "Standalone examples count characters, join lists and align or transpose printed rows.",
+      "paths": [
+        "Comma Code.py",
+        "catnapping.py",
+        "characterCount.py",
+        "characterPictureGrid.py",
+        "picnicTable.py",
+        "prettyCharacterCount.py",
+        "tablePrinter.py",
+        "tablePrinterSol.py"
+      ],
+      "kind": "service"
+    },
+    {
+      "id": "collections",
+      "label": "Inventory and board games",
+      "summary": "Examples mutate in-memory dictionaries, alternate board turns and choose a random message.",
+      "paths": [
+        "inventory.py",
+        "magic8Ball2.py",
+        "ticTacToe.py"
+      ],
+      "kind": "service"
+    },
+    {
+      "id": "tools",
+      "label": "Clipboard and variable scope",
+      "summary": "Clipboard scripts use pyperclip; separate scope demonstrations contrast global/local bindings.",
+      "paths": [
+        "bulletPointAdder.py",
+        "pw.py",
+        "sameName3.py",
+        "sameName4.py"
+      ],
+      "kind": "service"
+    },
+    {
+      "id": "terminal",
+      "label": "Terminal input and output",
+      "summary": "Each chosen script starts independently and reads or prints through the terminal.",
+      "paths": [],
+      "kind": "external"
+    },
+    {
+      "id": "clipboard",
+      "label": "Operating-system clipboard",
+      "summary": "pyperclip reads or replaces clipboard text; no clipboard contents are bundled.",
+      "paths": [],
+      "kind": "external"
+    }
+  ],
+  "edges": [
+    {
+      "from": "terminal",
+      "to": "prompts",
+      "label": "Enter requested values",
+      "description": "The selected exercise consumes input; these scripts do not call one another.",
+      "kind": "data"
+    },
+    {
+      "from": "prompts",
+      "to": "terminal",
+      "label": "Print a result or another prompt",
+      "description": "Loops may repeat, terminate, or reject invalid input according to the chosen script.",
+      "kind": "data"
+    },
+    {
+      "from": "terminal",
+      "to": "tools",
+      "label": "Choose an account argument",
+      "description": "pw.py looks up the supplied account in its in-memory dictionary.",
+      "kind": "data"
+    },
+    {
+      "from": "tools",
+      "to": "clipboard",
+      "label": "Replace clipboard text",
+      "description": "pw.py copies a stored value; bulletPointAdder.py copies bullet-prefixed lines.",
+      "kind": "data"
+    },
+    {
+      "from": "clipboard",
+      "to": "tools",
+      "label": "Read clipboard lines",
+      "description": "Only bulletPointAdder.py reads the existing clipboard.",
+      "kind": "data"
+    },
+    {
+      "from": "text",
+      "to": "terminal",
+      "label": "Print formatted examples",
+      "description": "Each text script uses its own embedded demonstration input.",
+      "kind": "data"
+    },
+    {
+      "from": "collections",
+      "to": "terminal",
+      "label": "Show inventory or board",
+      "description": "The inventory and board examples print in-memory state, not saved records.",
+      "kind": "data"
+    }
+  ],
+  "flows": [
+    {
+      "id": "collatz",
+      "title": "Follow a Collatz calculation",
+      "steps": [
+        {
+          "node": "terminal",
+          "note": "Start collatz.py and enter an integer."
+        },
+        {
+          "node": "prompts",
+          "note": "Repeatedly divide an even number by two or multiply an odd number by three and add one, printing each step until one. A conversion ValueError prints a message; it does not reprompt."
+        },
+        {
+          "node": "terminal",
+          "note": "Read the sequence. Nonpositive inputs have no guaranteed termination in this exercise."
+        }
+      ]
+    },
+    {
+      "id": "bullets",
+      "title": "Add bullets to clipboard lines",
+      "steps": [
+        {
+          "node": "clipboard",
+          "note": "Provide text already on the clipboard."
+        },
+        {
+          "node": "tools",
+          "note": "bulletPointAdder.py splits on newline, prefixes every line with an asterisk and space, then rejoins the lines."
+        },
+        {
+          "node": "clipboard",
+          "note": "Replace the clipboard with the transformed text; no file is saved."
+        }
+      ]
+    }
+  ],
+  "tour": [
+    {
+      "node": "prompts",
+      "title": "Choose one script at a time",
+      "note": "This repository is a set of learning exercises, not interconnected services. Birthdays exist only in one process dictionary."
+    },
+    {
+      "node": "text",
+      "title": "Formatting has explicit examples",
+      "note": "Both table printers transpose equal-length lists into right-aligned columns; the grid example prints columns as rows."
+    },
+    {
+      "node": "collections",
+      "title": "Board turns are not game validation",
+      "note": "ticTacToe.py accepts a dictionary key and alternates nine moves without a winner check or occupied-square protection."
+    },
+    {
+      "node": "tools",
+      "title": "Not a secure password manager",
+      "note": "pw.py stores credentials in source and copies them to the clipboard. Its add branch changes only memory and does not copy the newly entered value. The map uses an exact-literal-redacted derivative."
+    },
+    {
+      "node": "tools",
+      "title": "Some exercises intentionally fail",
+      "note": "sameName4.py reads a local variable before assignment. The map documents the code; it does not claim all scripts execute successfully."
+    }
+  ]
+}
