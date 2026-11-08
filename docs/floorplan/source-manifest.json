@@ -1,0 +1,112 @@
+{
+  "schema": "floorplan/source-manifest@1",
+  "repository": "Raleighite/automate_python",
+  "source_commit": "742c32a9edecd22b911a9f255447e0823a31ead5",
+  "scope": "Public-source architecture only; privately staged documentation candidate; no deployed-state claim.",
+  "mapping_source": "exact-literal-redacted derivative; RAW original freshness baseline",
+  "source_policy": "See check_freshness.py selected(); complete tracked/unignored selected source and config plus templates/static/public; development metadata, docs, policies, tests, dependencies and caches excluded.",
+  "source_files": {
+    "Comma Code.py": "16329fb64f2c94cc97cc7285d9e97c78cb1986f0ffdbc2e11bbdf8dcc20782d2",
+    "birthdays.py": "1c988170ca372d68e8336855f1c9c5cf1bf4d73463018959417b414a331458a0",
+    "break.py": "9f2b9cd203e59d6fa804d6b08bc8e977374fb8e58d9ea80193fe6ccda5b5dbee",
+    "bulletPointAdder.py": "a39eeb52106405d9174943ffcf93cf844821cc24478506229de66e15c9e17e99",
+    "catnapping.py": "dd47395f2c93d82064f2d83040356eb12ce140eb5507eb275a7dc148b60c01cd",
+    "characterCount.py": "19ba0dae05ff72ac5272099288d62d185100e4eb53124445f64bfc6ab11f6e24",
+    "characterPictureGrid.py": "3ff9a9a1037d7017a6134aba45128fb9041d62381821448f1f8d24a13996293a",
+    "collatz.py": "b7cab91647e945020f8f2756c0e5e4940acca7fe9417427b6d17c50da8fdce70",
+    "firstProgram.py": "3d3b62e3a54f824835baf3835862f41bf1fa96dd78a68e28e4258ee3e24c1e21",
+    "fiveTimes.py": "acc852c3c1f0f2af2f67c0d60af36b379e153eb0ad293b4017c8aaffcd8c8a8b",
+    "guess.py": "b07c97048ae30b779d1b33bc7397096ef75bfa8bfb7abfa7778a63165da88a8a",
+    "inventory.py": "9a3ab56185c4c5b68538230312143975d9f87e3caad101f0a1072bdc072ed144",
+    "magic8Ball2.py": "93088075b3d0fc0d15b2d949a293c9f84270b1ae9b0fc0419935e2d82bbdc68d",
+    "myPets.py": "696e887445990955d4673349eafd3205a827c5b1a92e16e57cea41064f944735",
+    "picnicTable.py": "3130dc95475953ae952a0e79bb514352c153b59e26af6928759c5591f5007342",
+    "prettyCharacterCount.py": "a57c5ae1b3baf712c442f2dde7238c297e4603ff03408074f46eb86c08e99ca8",
+    "pw.py": "0b7075038cf1056ccc57a0b19a43bde17fdd81b1b5c00f2c0b452838c1b0bb29",
+    "sameName3.py": "239ed11bea560af356776511f544d1e223f1c6094c89224bc45b7ba98bb0b5e1",
+    "sameName4.py": "7488d9ec9cf9174087e693ec8de574a084a1ecfed9a05a2bb2d0b448f9bdbb70",
+    "swordfish.py": "5730d217a5d8628ed98cb999566fb32c65130cdd2ed372aa10b7b2f1910af6aa",
+    "tablePrinter.py": "fc58948110501f903dde85a7a12f8765b45f1ab05b977967e682f7c68191dfc8",
+    "tablePrinterSol.py": "8b877901397297b0c64d7969b0c6f0ff80c36e349428ce577d0c74d729af44ce",
+    "ticTacToe.py": "59a9ee369de1f8591acbe56c38fe329b95df32a415e7ad580be25b2c29058768",
+    "validateInput.py": "b06c21bf38c67aacb39e7f1dbff21e825ef27b3b1f2d3d49cd9618a785f8416e"
+  },
+  "admitted_snapshot": {
+    "picnicTable.py": "3130dc95475953ae952a0e79bb514352c153b59e26af6928759c5591f5007342",
+    "fiveTimes.py": "acc852c3c1f0f2af2f67c0d60af36b379e153eb0ad293b4017c8aaffcd8c8a8b",
+    "myPets.py": "696e887445990955d4673349eafd3205a827c5b1a92e16e57cea41064f944735",
+    "collatz.py": "b7cab91647e945020f8f2756c0e5e4940acca7fe9417427b6d17c50da8fdce70",
+    "magic8Ball2.py": "93088075b3d0fc0d15b2d949a293c9f84270b1ae9b0fc0419935e2d82bbdc68d",
+    "ticTacToe.py": "59a9ee369de1f8591acbe56c38fe329b95df32a415e7ad580be25b2c29058768",
+    "tablePrinterSol.py": "8b877901397297b0c64d7969b0c6f0ff80c36e349428ce577d0c74d729af44ce",
+    "sameName4.py": "7488d9ec9cf9174087e693ec8de574a084a1ecfed9a05a2bb2d0b448f9bdbb70",
+    "validateInput.py": "b06c21bf38c67aacb39e7f1dbff21e825ef27b3b1f2d3d49cd9618a785f8416e",
+    "pw.py": "ade6d7161a7261205aead3a28509151e803749b0228b6e90df4c9332fa830cf2",
+    "birthdays.py": "1c988170ca372d68e8336855f1c9c5cf1bf4d73463018959417b414a331458a0",
+    "Comma Code.py": "16329fb64f2c94cc97cc7285d9e97c78cb1986f0ffdbc2e11bbdf8dcc20782d2",
+    "firstProgram.py": "3d3b62e3a54f824835baf3835862f41bf1fa96dd78a68e28e4258ee3e24c1e21",
+    "catnapping.py": "dd47395f2c93d82064f2d83040356eb12ce140eb5507eb275a7dc148b60c01cd",
+    "LICENSE": "278c0c447ae8be6d5e6b745f064cfc8672bdb36672a22df5d981fa1fc2443967",
+    "characterPictureGrid.py": "3ff9a9a1037d7017a6134aba45128fb9041d62381821448f1f8d24a13996293a",
+    "prettyCharacterCount.py": "a57c5ae1b3baf712c442f2dde7238c297e4603ff03408074f46eb86c08e99ca8",
+    "guess.py": "b07c97048ae30b779d1b33bc7397096ef75bfa8bfb7abfa7778a63165da88a8a",
+    "break.py": "9f2b9cd203e59d6fa804d6b08bc8e977374fb8e58d9ea80193fe6ccda5b5dbee",
+    "sameName3.py": "239ed11bea560af356776511f544d1e223f1c6094c89224bc45b7ba98bb0b5e1",
+    "characterCount.py": "19ba0dae05ff72ac5272099288d62d185100e4eb53124445f64bfc6ab11f6e24",
+    "bulletPointAdder.py": "a39eeb52106405d9174943ffcf93cf844821cc24478506229de66e15c9e17e99",
+    "inventory.py": "9a3ab56185c4c5b68538230312143975d9f87e3caad101f0a1072bdc072ed144",
+    "swordfish.py": "5730d217a5d8628ed98cb999566fb32c65130cdd2ed372aa10b7b2f1910af6aa",
+    "tablePrinter.py": "fc58948110501f903dde85a7a12f8765b45f1ab05b977967e682f7c68191dfc8",
+    "README.md": "e626fd40f0d477a035335e6f03350924909c63fad18ebf85e8f289c3e3815fea"
+  },
+  "counts": {
+    "files": 24,
+    "codeFiles": 24,
+    "routes": 0,
+    "modules": 6,
+    "unassigned": 0,
+    "flows": 2,
+    "tour": 5,
+    "links": 7
+  },
+  "artifacts": {
+    "check_freshness.py": "e139864b0e7f018c5cd9f29df3687a04d6065c9bf6f92b72091ede3fc360aa09",
+    "generator.json": "235f772c728b35d70ac6e68209632aa28c9471fc6ce20b6542c0d3375dff016e",
+    "architecture.json": "b67a7dd4152aad10ba1eaf22a9e1b07e6a4b810077c317c973df1e8310ad68a8",
+    "NOTICE.md": "1b961d21b4feedd4af9be96ea51dd05d1f7cf45304ab4fe88d95ba0cebeada2f",
+    "index.html": "9a3d8d5c217fad4551eacf4d5bbea10c7214319558db78ce3f5b6413dcc77e54",
+    "README.md": "7f09dc2fe6a3d6396feb8749effdf6757a4e978365a4e9981a41cbe5117d20b5",
+    "descriptions/reviewed.json": "695c546e136ee15d6e3e1acb3d5b78111c07b987a4618d40ffece63684d1a42c",
+    "tests/test_freshness.py": "5af948a1f3b1242aca1453904c29aae05778282c75c20e5ef527a827c8b04c2c",
+    "licenses/inter-LICENSE.txt": "3b0a5fca3d17942cde889069889dedbbbd075e9b599968c82a95f4d944e9b345",
+    "licenses/elkjs-LICENSE.md": "89591d4578fb1ebd91501312a3d25f021bd865a2e436641c1cf7b1bc7e3c1617",
+    "licenses/LICENSE": "65a06a9dab105cd5a2b713a41a020a442bd431e6e19631182ed3889fd1672faf",
+    "licenses/jetbrains-mono-LICENSE.txt": "403581b69dac5cff4079205e01c6b467e56af449ecbd7247693ddb1baafa005b",
+    "licenses/source/LICENSE": "278c0c447ae8be6d5e6b745f064cfc8672bdb36672a22df5d981fa1fc2443967"
+  },
+  "redaction": [
+    {
+      "file": "pw.py",
+      "original_sha256": "0b7075038cf1056ccc57a0b19a43bde17fdd81b1b5c00f2c0b452838c1b0bb29",
+      "derived_sha256": "ade6d7161a7261205aead3a28509151e803749b0228b6e90df4c9332fa830cf2",
+      "spans": [
+        {
+          "start_byte": 82,
+          "end_byte_exclusive": 111,
+          "line": 5
+        },
+        {
+          "start_byte": 134,
+          "end_byte_exclusive": 164,
+          "line": 6
+        },
+        {
+          "start_byte": 190,
+          "end_byte_exclusive": 197,
+          "line": 7
+        }
+      ],
+      "type": "three nonoverlapping exact AST string-literal spans; values never persisted separately"
+    }
+  ]
+}

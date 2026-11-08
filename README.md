@@ -21,3 +21,7 @@ python3 <filename>.py
 ```
 
 Requires Python 3.x. No external dependencies.
+
+## Understand this source
+
+Open the [offline Floorplan and guided source tour](docs/floorplan/README.md), or [download the self-contained HTML](docs/floorplan/index.html). This is a pinned source map, not a running application.

@@ -1,0 +1,101 @@
+{
+  "files": {
+    "Comma Code.py": {
+      "name": "Comma-and-and list joiner",
+      "description": "Builds a comma-separated string with and before the final item, printing intermediate values and the returned result. It compares item values with the final item rather than comparing positions."
+    },
+    "birthdays.py": {
+      "name": "In-memory birthday lookup",
+      "description": "Prompts for a name, prints a known birthday or adds a supplied birthday to the process dictionary; blank input exits without persisting changes."
+    },
+    "break.py": {
+      "name": "Break from a name loop",
+      "description": "Repeats its name prompt until input exactly matches the embedded demonstration string, including its punctuation and trailing space."
+    },
+    "bulletPointAdder.py": {
+      "name": "Clipboard bullet formatter",
+      "description": "Reads clipboard text through pyperclip, prefixes every newline-separated line with an asterisk and space, and writes the joined text back."
+    },
+    "catnapping.py": {
+      "name": "Multiline string printing",
+      "description": "Prints a fixed demonstration letter using a triple-quoted string."
+    },
+    "characterCount.py": {
+      "name": "Character frequency dictionary",
+      "description": "Counts every character in a fixed sentence using setdefault and prints the resulting dictionary."
+    },
+    "characterPictureGrid.py": {
+      "name": "Transposed character picture",
+      "description": "Iterates across each column of the embedded grid and prints one transposed row per output line."
+    },
+    "collatz.py": {
+      "name": "Collatz sequence practice",
+      "description": "Converts one terminal input to an integer and repeatedly applies the even/odd Collatz rule until one; catches conversion ValueError but does not reprompt or validate positivity."
+    },
+    "firstProgram.py": {
+      "name": "Name and age greeting",
+      "description": "Reads a name and age, prints name length and the integer age plus one; invalid age input is not caught."
+    },
+    "fiveTimes.py": {
+      "name": "Sum through one hundred",
+      "description": "Accumulates the integers produced by range(101) and prints the total; the filename is not its actual behavior."
+    },
+    "guess.py": {
+      "name": "Six-attempt number guessing",
+      "description": "Chooses an integer from one through twenty, gives high/low feedback for up to six guesses and reports success or reveals the chosen number."
+    },
+    "inventory.py": {
+      "name": "Inventory dictionary update",
+      "description": "Adds repeated loot entries to an existing inventory dictionary, then prints each item count and the total quantity."
+    },
+    "magic8Ball2.py": {
+      "name": "Random list-based fortune",
+      "description": "Chooses and prints one message by a random valid index into the embedded response list."
+    },
+    "myPets.py": {
+      "name": "Pet-name membership check",
+      "description": "Reads one name and prints whether it belongs to the embedded pet-name list."
+    },
+    "picnicTable.py": {
+      "name": "Aligned picnic inventory",
+      "description": "Prints a centered heading and padded key/count rows twice using two width configurations."
+    },
+    "prettyCharacterCount.py": {
+      "name": "Pretty-printed character counts",
+      "description": "Builds the same kind of frequency dictionary as characterCount.py and formats it with pprint."
+    },
+    "pw.py": {
+      "name": "Insecure password clipboard exercise",
+      "description": "Looks up an account command-line argument in a hardcoded dictionary and copies its value with pyperclip. The optional add branch only updates process memory; the mapping derivative replaces three literal values, not behavior."
+    },
+    "sameName3.py": {
+      "name": "Global and local scope demonstration",
+      "description": "Shows a function updating a global name while another function prints an independent local name; a third defined function is not called."
+    },
+    "sameName4.py": {
+      "name": "Read-before-local-assignment example",
+      "description": "Calls a function that reads a name before its local assignment, illustrating an UnboundLocalError rather than successful global lookup."
+    },
+    "swordfish.py": {
+      "name": "Nested identity and password loop",
+      "description": "Continues until the classroom identity matches, then checks a fixed demonstration password and breaks on success; this is not real authentication."
+    },
+    "tablePrinter.py": {
+      "name": "Table printer with width helper",
+      "description": "Calculates maximum item lengths with a helper, then prints equal-length input lists as right-aligned columns."
+    },
+    "tablePrinterSol.py": {
+      "name": "Inline table width solution",
+      "description": "Computes each column width with nested loops and prints the transposed demonstration table; assumes equal-length input lists."
+    },
+    "ticTacToe.py": {
+      "name": "Nine-turn dictionary board",
+      "description": "Prints a board, accepts a board key, writes the current mark and alternates X/O for nine turns; no winner or occupied-cell checks are implemented."
+    },
+    "validateInput.py": {
+      "name": "Age and password text validation",
+      "description": "Repeats input until age text is decimal, then until password text is alphanumeric; does not save a credential or authenticate anyone."
+    }
+  },
+  "routes": {}
+}
